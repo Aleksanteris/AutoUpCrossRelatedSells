@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="test_extensions" translate="label" sortOrder="1">
+            <label><![CDATA[<img src="https://logos-download.com/wp-content/uploads/2018/03/Batman_logo_bat.png" width="50px"/>]]></label>
+        </tab>
+
+        <section id="testextensions_autorelatedupcrosssells" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Auto Related/Upsells/Cross-sells</label>
+            <tab>test_extensions</tab>
+           <!-- <resource>TestExtensions_AutoRelatedUpCrossSells::auto</resource>-->
+
+            <group id="enabled" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="module_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Extension Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="related" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Auto Related Products</label>
+
+                <field id="related_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Auto Select Related Products Randomly</label>
+                    <source_model>TestExtensions\AutoRelatedUpCrossSells\Model\Config\Source\YesNoEmpty</source_model>
+                </field>
+
+                <field id="related_list" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Choose Random from Best Sellers List Top</label>
+                </field>
+
+                <field id="related_price_range" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Point of Selected Products</label>
+                    <frontend_model>TestExtensions\AutoRelatedUpCrossSells\Block\Adminhtml\Form\Renderer\Config\PriceRange</frontend_model>
+                </field>
+
+                <field id="related_number" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Number of Related Products</label>
+                </field>
+            </group>
+
+            <group id="upsells" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Auto Upsells</label>
+
+                <field id="upsells_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Auto Select Upsells Randomly</label>
+                    <source_model>TestExtensions\AutoRelatedUpCrossSells\Model\Config\Source\YesNoEmpty</source_model>
+                </field>
+
+                <field id="upsells_list" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Choose Random from Best Sellers List Top</label>
+                </field>
+
+                <field id="upsells_price_range" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Point of Selected Products</label>
+                    <frontend_model>TestExtensions\AutoRelatedUpCrossSells\Block\Adminhtml\Form\Renderer\Config\PriceRange</frontend_model>
+                </field>
+
+                <field id="upsells_number" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Number of Upsells</label>
+                </field>
+            </group>
+
+            <group id="crosssells" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Auto Cross-sells</label>
+
+                <field id="crosssells_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Auto Select Cross-sells Randomly</label>
+                    <source_model>TestExtensions\AutoRelatedUpCrossSells\Model\Config\Source\YesNoEmpty</source_model>
+                </field>
+
+                <field id="crosssells_list" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Choose Random from Best Sellers List Top</label>
+                </field>
+
+                <field id="crosssells_price_range" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Point of Selected Products</label>
+                    <frontend_model>TestExtensions\AutoRelatedUpCrossSells\Block\Adminhtml\Form\Renderer\Config\PriceRange</frontend_model>
+                </field>
+
+                <field id="crosssells_number" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Number of Cross-sells</label>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>
+
