@@ -9,7 +9,7 @@
         <section id="testextensions_autorelatedupcrosssells" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Auto Related/Upsells/Cross-sells</label>
             <tab>test_extensions</tab>
-           <!-- <resource>TestExtensions_AutoRelatedUpCrossSells::auto</resource>-->
+           <resource>TestExtensions_AutoRelatedUpCrossSells::auto</resource>
 
             <group id="enabled" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General Settings</label>

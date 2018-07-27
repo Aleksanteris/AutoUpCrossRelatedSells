@@ -26,6 +26,5 @@ class PriceRange extends Field
             ) . $to . __(
                 '<label class="label"><span>% Higher</span></label>'
             );
-
     }
 }
